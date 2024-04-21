@@ -48,13 +48,21 @@ class PokemonTrainerCard_Scene
                       pbGetAbbrevMonthName($PokemonGlobal.startTime.mon),
                       $PokemonGlobal.startTime.day,
                       $PokemonGlobal.startTime.year)
+					  
+	# Format the money value with commas and two decimal places
+    money_string = sprintf("%.2f", $player.money / 100.0)
+    money_parts = money_string.split(".")
+    integer_part = money_parts[0].reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+    decimal_part = money_parts[1]
+    formatted_money = "#{integer_part}.#{decimal_part}"
+					  
     textPositions = [
       [_INTL("Name"), 34, 70, :left, baseColor, shadowColor],
       [$player.name, 302, 70, :right, baseColor, shadowColor],
       [_INTL("ID No."), 332, 70, :left, baseColor, shadowColor],
       [sprintf("%05d", $player.public_ID), 468, 70, :right, baseColor, shadowColor],
       [_INTL("Money"), 34, 118, :left, baseColor, shadowColor],
-      [_INTL("${1}", $player.money.to_s_formatted), 302, 118, :right, baseColor, shadowColor],
+      [_INTL("${1}", formatted_money), 302, 118, :right, baseColor, shadowColor],
       [_INTL("Pokédex"), 34, 166, :left, baseColor, shadowColor],
       [sprintf("%d/%d", $player.pokedex.owned_count, $player.pokedex.seen_count), 302, 166, :right, baseColor, shadowColor],
       [_INTL("Time"), 34, 214, :left, baseColor, shadowColor],

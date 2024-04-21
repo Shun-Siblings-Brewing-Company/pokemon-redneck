@@ -1,0 +1,100 @@
+
+=================
+
+[2024-04-21 13:28:30 -0500]
+[Pokémon Essentials version 21.1]
+
+Exception: ArgumentError
+Message: wrong number of arguments (given 1, expected 0)
+
+Backtrace:
+012_UI_TrainerCard.rb:57:in `to_s'
+012_UI_TrainerCard.rb:57:in `pbDrawTrainerCardFront'
+012_UI_TrainerCard.rb:33:in `pbStartScene'
+012_UI_TrainerCard.rb:107:in `pbStartScreen'
+001_UI_PauseMenu.rb:247:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:244:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+
+=================
+
+[2024-04-21 13:29:00 -0500]
+[Pokémon Essentials version 21.1]
+
+Exception: NoMethodError
+Message: undefined method `to_s_formatted' for "2864.00":String
+
+Backtrace:
+012_UI_TrainerCard.rb:57:in `pbDrawTrainerCardFront'
+012_UI_TrainerCard.rb:33:in `pbStartScene'
+012_UI_TrainerCard.rb:107:in `pbStartScreen'
+001_UI_PauseMenu.rb:247:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:244:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+002_Scene_Map.rb:110:in `call_menu'
+
+=================
+
+[2024-04-21 13:29:31 -0500]
+[Pokémon Essentials version 21.1]
+
+Exception: NoMethodError
+Message: undefined method `to_s_formatted' for "$30.00":String
+
+Backtrace:
+012_UI_TrainerCard.rb:57:in `pbDrawTrainerCardFront'
+012_UI_TrainerCard.rb:33:in `pbStartScene'
+012_UI_TrainerCard.rb:107:in `pbStartScreen'
+001_UI_PauseMenu.rb:247:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:244:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+002_Scene_Map.rb:110:in `call_menu'
+
+=================
+
+[2024-04-21 13:29:53 -0500]
+[Pokémon Essentials version 21.1]
+
+Exception: NoMethodError
+Message: undefined method `to_s_formatted' for "2864.00":String
+
+Backtrace:
+012_UI_TrainerCard.rb:57:in `pbDrawTrainerCardFront'
+012_UI_TrainerCard.rb:33:in `pbStartScene'
+012_UI_TrainerCard.rb:107:in `pbStartScreen'
+001_UI_PauseMenu.rb:247:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:244:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+002_Scene_Map.rb:110:in `call_menu'
+
+=================
+
+[2024-04-21 13:31:56 -0500]
+[Pokémon Essentials version 21.1]
+
+Exception: NameError
+Message: uninitialized constant PokemonTrainerCard_Scene::ActiveSupport
+
+Backtrace:
+012_UI_TrainerCard.rb:57:in `pbDrawTrainerCardFront'
+012_UI_TrainerCard.rb:33:in `pbStartScene'
+012_UI_TrainerCard.rb:107:in `pbStartScreen'
+001_UI_PauseMenu.rb:247:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:244:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+002_Scene_Map.rb:110:in `call_menu'

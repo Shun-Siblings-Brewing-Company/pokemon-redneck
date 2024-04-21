@@ -13,6 +13,17 @@ class PokemonPauseMenu_Scene
     @sprites["infowindow"].visible = false
     @sprites["helpwindow"] = Window_UnformattedTextPokemon.newWithSize("", 0, 0, 32, 32, @viewport)
     @sprites["helpwindow"].visible = false
+	
+	# Format the money value with commas and two decimal places
+    money_string = sprintf("%.2f", $player.money / 100.0)
+    money_parts = money_string.split(".")
+    integer_part = money_parts[0].reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+    decimal_part = money_parts[1]
+    formatted_money = "#{integer_part}.#{decimal_part}"
+	
+	@sprites["moneywindow"] = Window_UnformattedTextPokemon.newWithSize(_INTL("${1}", formatted_money), 0, 0, 120, 32, @viewport)
+	@sprites["moneywindow"].resizeToFit(@sprites["moneywindow"].text, Graphics.height)
+    @sprites["moneywindow"].viewport = @viewport
     @infostate = false
     @helpstate = false
     pbSEPlay("GUI menu open")
